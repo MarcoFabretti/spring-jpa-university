@@ -1,4 +1,4 @@
-package model;
+package org.generation.italy.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,7 +20,9 @@ public class Departments {
 	private String phone;
 	private String email;
 	private String website;
-	private String head_of_departmnt;
+	
+	@Column(name="head_of_department")
+	private String headOfDepartment;
 	
 	public Integer getId() {
 		return id;
@@ -58,11 +60,11 @@ public class Departments {
 	public void setWebsite(String website) {
 		this.website = website;
 	}
-	public String getHead_of_departmnt() {
-		return head_of_departmnt;
+	public String getHeadOfDepartment() {
+		return headOfDepartment;
 	}
-	public void setHead_of_departmnt(String head_of_departmnt) {
-		this.head_of_departmnt = head_of_departmnt;
+	public void setHead_of_department(String headOfDepartment) {
+		this.headOfDepartment = headOfDepartment;
 	}
 	
 }
